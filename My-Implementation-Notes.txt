@@ -1,0 +1,17 @@
+SYNTHESIS LNMIIT New Website Design & Development Competition 2017-18
+----------------------------------------------------------------------------------------------
+
+IMPLEMENTATION LANGUAGES :
+	- HTML
+	- CSS
+	- JavaScript (JQuery)
+	- PHP (in future version)
+
+
+FRAMEWORKS USED :
+	- Material Design Lite
+	- BootStrap
+
+IDE(s) USED :
+	- Brackets
+	- Visual Studio Code

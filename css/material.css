@@ -905,7 +905,7 @@ p {
   margin-bottom: 16px; }
 
 a {
-  color: rgb(255,64,129);
+  color: rgb(113, 107, 109);;
   font-weight: 500; }
 
 blockquote {
@@ -7362,7 +7362,6 @@ input.mdl-button[type="submit"] {
   box-sizing: border-box; }
 
 .mdl-navigation__link {
-  color: rgb(66,66,66);
   text-decoration: none;
   margin: 0;
   font-size: 14px;

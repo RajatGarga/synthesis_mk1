@@ -718,3 +718,14 @@ a img{
   font-family: "Roboto","Helvetica","Arial",sans-serif;
   letter-spacing: .04em
 }
+
+.acad-pic{
+  height:200px;
+  object-fit: cover;
+  margin-top:0px;
+  margin-left:auto;
+  margin-right:auto; 
+}
+.acad-heading{
+  padding-left: 10px; margin:0; font-weight:400; color:rgb(160, 23, 23);
+}

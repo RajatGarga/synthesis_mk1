@@ -1,0 +1,8 @@
+SYNTHESIS LNMIIT New Website Design & Development Competition 2017-18
+----------------------------------------------------------------------------------------------
+This website proposal utilises modern material theme design concepts.
+A floating navigation bar with an hamburger menu on left side and easy login field on right has been provided for easy navigation.
+Hamburger menu ensures easy website navigation on mobile devices and the login field provides quick access to faculty and students.
+A full-screen image carousel on homepage allows the institute to highlight key events and achievements.
+A notice board, event and research ticker provides convenient access to information from different departments of college.
+A prominent footer houses various important links for easy navigation.

@@ -103,160 +103,79 @@
               <div class="mdl-tabs__panel is-active" id="notice-board">
                 <!--do here-->
                 <div class="vticker" style="width:auto !important; margin-top:12px;">
-                  <ul>
-                    <li class="ww">
-                      <!-- Square card -->
-                      <div class="card-news mdl-card mdl-shadow--2dp">
-                        <div class="mdl-card__supporting-text">
-                          Recruitment of for LIBRARY TRAINEE - On Contract Basis
-                        </div>
-                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect news-visit">
-                          VISIT
-                      </button>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="card-news mdl-card mdl-shadow--2dp">
-                        <div class="mdl-card__supporting-text">
-                          Anti Ragging Notice
-                        </div>
-                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect news-visit">
-                              VISIT
+                <?php
+                    $file_handle = fopen("notices.txt", "rb");
+                    echo "<ul>";
+                    
+                    while (!feof($file_handle) ) {
+                        $line_of_text = fgets($file_handle);
+                        $parts = explode(':', $line_of_text);
+                        echo "<li class=\"ww\">
+                        <div class=\"card-news mdl-card mdl-shadow--2dp\">
+                          <div class=\"mdl-card__supporting-text\">
+                            $parts[0]
+                          </div>
+                          <button class=\"mdl-button mdl-js-button mdl-js-ripple-effect news-visit\">
+                                  VISIT
                           </button>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="card-news mdl-card mdl-shadow--2dp">
-                        <div class="mdl-card__supporting-text">
-                          Announcement of Lateral admission - 2017 & Lateral Admission Application Form Click here
                         </div>
-                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect news-visit">
-                              VISIT
-                          </button>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="card-news mdl-card mdl-shadow--2dp">
-                        <div class="mdl-card__supporting-text">
-                          Notice - Prevention of Sexual Harassment
-                        </div>
-                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect news-visit">
-                              VISIT
-                          </button>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="card-news mdl-card mdl-shadow--2dp">
-                        <div class="mdl-card__supporting-text">
-                          Cast based Discrimination online form
-                        </div>
-                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect news-visit">
-                              VISIT
-                          </button>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="card-news mdl-card mdl-shadow--2dp">
-                        <div class="mdl-card__supporting-text">
-                          Committee to Prevent Caste-based discrimination
-                        </div>
-                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect news-visit">
-                              VISIT
-                          </button>
-                      </div>
-                    </li>
-                  </ul>
+                      </li>";
+                    }
+                    fclose($file_handle);
+                    echo "</ul>";
+                    ?>
                 </div>
               </div>
               <div class="mdl-tabs__panel" id="events">
                 <!--do here-->
                 <div class="vticker" style="width:auto !important; margin-top:12px;">
-                  <ul>
-                    <li class="ww">
-                      <!-- Square card -->
-                      <div class="card-news mdl-card mdl-shadow--2dp">
-                        <div class="mdl-card__supporting-text">
-                          <b>15 May 2017 -15 July 2017 :</b> LNMIIT Undergraduate Summer Internship Programmes 2017
+                    <?php
+                    $file_handle = fopen("events.txt", "rb");
+                    echo "<ul>";
+                    
+                    while (!feof($file_handle) ) {
+                        $line_of_text = fgets($file_handle);
+                        $parts = explode(':', $line_of_text);
+                        echo "<li class=\"ww\">
+                        <div class=\"card-news mdl-card mdl-shadow--2dp\">
+                          <div class=\"mdl-card__supporting-text\">
+                            <b>$parts[0]</b> $parts[1]
+                          </div>
+                          <button class=\"mdl-button mdl-js-button mdl-js-ripple-effect news-visit\">
+                                  VISIT
+                          </button>
                         </div>
-                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect news-visit">
-                            VISIT
-                        </button>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="card-news mdl-card mdl-shadow--2dp">
-                        <div class="mdl-card__supporting-text">
-                          <b>3 March 2017 - 5 March 2017 :</b> E-Fest Asia Pacific
-                        </div>
-                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect news-visit">
-                                VISIT
-                            </button>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="card-news mdl-card mdl-shadow--2dp">
-                        <div class="mdl-card__supporting-text">
-                          <b>14 June 2017 - 19 June 2017 :</b> 4 weeks summer internship cum training on VLSI
-                        </div>
-                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect news-visit">
-                                VISIT
-                            </button>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="card-news mdl-card mdl-shadow--2dp">
-                        <div class="mdl-card__supporting-text">
-                          <b>5 June 2017 - 7 June 2017 :</b>VLSI Circuit Design using Cadence EDA Tools
-                        </div>
-                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect news-visit">
-                                VISIT
-                            </button>
-                      </div>
-                    </li>
-                  </ul>
+                      </li>";
+                    }
+                    fclose($file_handle);
+                    echo "</ul>";
+                    ?>
                 </div>
               </div>
               <div class="mdl-tabs__panel" id="research">
                 <!--do here-->
                 <div class="vticker" style="width:auto !important; margin-top:12px;">
-                  <ul>
-                    <li class="ww">
-                      <!-- Square card -->
-                      <div class="card-news mdl-card mdl-shadow--2dp">
-                        <div class="mdl-card__supporting-text">
-                          <b>S. Mishra, J. Singha, R.H. Laskar</b><br>Vision based hand gesture recognition of alphabets,
-                          numbers, arithmetic operators and ASCII characters in order to develop a virtual text-entry interface
-                          system.
-                          <br>-Neural Computing and Applications (Springer)
+                <?php
+                    $file_handle = fopen("research.txt", "rb");
+                    echo "<ul>";
+                    
+                    while (!feof($file_handle) ) {
+                        $line_of_text = fgets($file_handle);
+                        $parts = explode(':', $line_of_text);
+                        echo "<li class=\"ww\">
+                        <div class=\"card-news mdl-card mdl-shadow--2dp\">
+                          <div class=\"mdl-card__supporting-text\">
+                            <b>$parts[0]</b> $parts[1]
+                          </div>
+                          <button class=\"mdl-button mdl-js-button mdl-js-ripple-effect news-visit\">
+                                  VISIT
+                          </button>
                         </div>
-                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect news-visit">
-                            VISIT
-                        </button>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="card-news mdl-card mdl-shadow--2dp">
-                        <div class="mdl-card__supporting-text">
-                          <b>Ravi Gorthi, N. Parameshwaran</b><br>Gap Analysis in Concept Understanding<br>-21st International
-                          Conference of Austrailian Association for Engineering Education<br>
-                        </div>
-                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect news-visit">
-                                VISIT
-                            </button>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="card-news mdl-card mdl-shadow--2dp">
-                        <div class="mdl-card__supporting-text">
-                          <b>Ankita Sharma, Preety Singh</b><br>A comparative study of frequency domain based approaches
-                          for image tamper detection.<br>TENCON 2015<br>
-                        </div>
-                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect news-visit">
-                                VISIT
-                            </button>
-                      </div>
-                    </li>
-                  </ul>
+                      </li>";
+                    }
+                    fclose($file_handle);
+                    echo "</ul>";
+                    ?>
                 </div>
               </div>
             </div>

@@ -1,0 +1,5 @@
+S. Mishra, J. Singha, R.H. Laskar : Vision based hand gesture recognition of alphabets, numbers, arithmetic operators and ASCII characters in order to develop a virtual text-entry interface system. -Neural Computing and Applications (Springer)
+Ravi Gorthi, N. Parameshwaran : Gap Analysis in Concept Understanding -21st International Conference of Austrailian Association for Engineering Education
+Ankita Sharma, Preety Singh : A comparative study of frequency domain based approaches for image tamper detection. -TENCON 2015
+test 1: desc
+test 2: desc
